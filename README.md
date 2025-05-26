@@ -32,9 +32,9 @@ The extension intelligently scrapes:
 - Current price from price elements
 - Market cap from stats sections
 
-### Whale Data (Currently Mock)
-- Generates random whale scores between 65-92
-- Shows 1-5 whale wallets detected
+### Whale Data
+- Scrapes axiom holder data for wallets with big solana balances
+- Takes the top 1-5 whale wallets detected
 - Displays accumulation/distribution trends
 - Color-codes risk levels (green/yellow/red)
 
@@ -81,7 +81,6 @@ const whaleData = await response.json();
 
 ## 📝 Notes
 
-- Currently uses **fake whale data** for demonstration
 - Only works on axiom.trade domain
 - Requires Chrome browser
 
