@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 300px;
+      padding: 16px;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #0a1929 0%, #0a2d4f 100%);
+      color: #ffffff;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .logo {
+      width: 32px;
+      height: 16px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 18px;
+      color: #3eaafc;
+    }
+    .status {
+      padding: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      border: 1px solid rgba(62, 170, 252, 0.3);
+      margin-bottom: 12px;
+    }
+    .status.active {
+      border-color: rgba(74, 222, 128, 0.5);
+      background: rgba(74, 222, 128, 0.1);
+    }
+    .btn {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      background: #3eaafc;
+      color: #ffffff;
+      transition: all 0.2s;
+    }
+    .btn:hover {
+      background: #3e88fc;
+    }
+    .links {
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+    }
+    .links a {
+      color: #6eb5ff;
+      text-decoration: none;
+      font-size: 12px;
+      margin: 0 8px;
+    }
+    .links a:hover {
+      color: #3eaafc;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="images/icon48.png" alt="WhalesOnSol" width="32" height="32">
+    <h1>WhalesOnSol</h1>
+  </div>
+  
+  <div class="status active">
+    <strong>✓ Active</strong><br>
+    <small>Whale tracking is enabled</small>
+  </div>
+  
+  <button class="btn" id="visitWebsite">
+    Visit WhalesOnSol.com
+  </button>
+  
+  <div class="links">
+    <a href="#" id="settings">Settings</a>
+    <a href="#" id="help">Help</a>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

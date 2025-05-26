@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhalesOnSol - Detailed Analysis</title>
+  <link rel="stylesheet" href="styles/analysis.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">
+        <img src="images/icon48.png" alt="WhalesOnSol" width="32" height="32" />
+        <h1>WhalesOnSol Analysis</h1>
+      </div>
+      <button class="close-btn" id="closeBtn">×</button>
+    </header>
+
+    <div class="token-overview">
+      <h2 id="tokenSymbol">Loading...</h2>
+      <div class="token-stats">
+        <div class="stat">
+          <span class="stat-label">Price</span>
+          <span class="stat-value" id="tokenPrice">$0.00</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Market Cap</span>
+          <span class="stat-value" id="tokenMC">$0</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Whale Score</span>
+          <span class="stat-value" id="whaleScore">0</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="analysis-content">
+      <section class="section">
+        <h3>🐋 Whale Analysis</h3>
+        <div id="whaleIndicators" class="indicator-list">
+          <!-- Whale indicators will be populated here -->
+        </div>
+      </section>
+
+      <section class="section">
+        <h3>🏆 Top Holders</h3>
+        <div id="topHolders" class="holders-table">
+          <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Analyzing whale wallets...</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3>📊 Token Insights</h3>
+        <div id="tokenInsights" class="insights-list">
+          <!-- Token insights will be populated here -->
+        </div>
+      </section>
+
+      <section class="section">
+        <h3>🚨 Alert Settings</h3>
+        <div class="alert-settings">
+          <div class="alert-option">
+            <label>
+              <input type="checkbox" id="alertWhaleMovement" />
+              <span>Alert on whale movement (>2% supply)</span>
+            </label>
+          </div>
+          <div class="alert-option">
+            <label>
+              <input type="checkbox" id="alertPriceChange" />
+              <span>Alert on significant price changes (>10%)</span>
+            </label>
+          </div>
+          <div class="alert-option">
+            <label>
+              <input type="checkbox" id="alertNewWhales" />
+              <span>Alert when new whales enter</span>
+            </label>
+          </div>
+          <button class="btn-primary" id="saveAlerts">Save Alert Settings</button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script src="scripts/analysis.js"></script>
+</body>
+</html>
